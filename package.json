@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "build": "npm run generate:apis && stencil build && npm run netlify:prepare",
-    "download-readme-files": "node scripts/download-docs-from-github && cd docs/dist/src && cp -R --parents components/**/readme.md ../.. && cd ../.. && rm -rf dist",
+    "download-readme-files": "node scripts/download-docs-from-github && cd docs/dist/src && rsync -R components/**/readme.md ../.. && cd ../.. && rm -rf dist",
     "clean": "rm -rf _docs && rm -rf docs/components/**",
     "generate:apis": "npm run clean && npm run download-readme-files && markdown-folder-to-html && node scripts/generate-api-pages",
     "start": "npm run generate:apis && stencil build --dev --watch --serve",
@@ -21,7 +21,6 @@
     "netlify:prepare": "cp netlify/* www/"
   },
   "dependencies": {
-    "@gmvdev/materials": "1.1.0",
     "@material/animation": "~1.0.0",
     "@material/base": "~1.0.0",
     "@material/button": "~2.1.1",
@@ -55,8 +54,9 @@
     "material-design-icons": "^3.0.1"
   },
   "devDependencies": {
-    "@stencil/core": "1.0.1",
-    "@stencil/sass": "0.2.1",
+    "@gmvdev/materials": "^1.1.1-3d456dfc77521cb42ee433e9cd34fa85e468ba8c.0",
+    "@stencil/core": "^1.2.4",
+    "@stencil/sass": "^1.0.1",
     "@types/jest": "24.0.13",
     "@types/puppeteer": "1.12.2",
     "del-cli": "^2.0.0",
