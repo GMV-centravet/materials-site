@@ -58,6 +58,43 @@ import { Component, h, Host } from '@stencil/core';
                     `}
                   </code>
                 </app-demo-code-block>
+                <app-demo-code-block blockTitle="List with unique selectable items">
+                  
+                  <materials-list slot="demo" selectable>
+                    <materials-list-item>Simple item 1</materials-list-item>
+                    <materials-list-item>Simple item 2</materials-list-item>
+                    <materials-list-item>Simple item 3</materials-list-item>
+                    <materials-list-item>Simple item 4</materials-list-item>
+                  </materials-list>
+                  <code slot="code">
+                    {`
+                      <materials-list selectable>
+                        <materials-list-item>Un</materials-list-item>
+                        <materials-list-item>Deux</materials-list-item>
+                        <materials-list-item>Trois</materials-list-item>
+                        <materials-list-item>Quatre</materials-list-item>
+                      </materials-list>
+                    `}
+                  </code>
+                </app-demo-code-block>
+                <app-demo-code-block  blockTitle="List with multiple selectable items">
+                  <materials-list slot="demo" selectable multiple>
+                    <materials-list-item selected>Simple item 1</materials-list-item>
+                    <materials-list-item>Simple item 2</materials-list-item>
+                    <materials-list-item>Simple item 3</materials-list-item>
+                    <materials-list-item>Simple item 4</materials-list-item>
+                  </materials-list>
+                  <code slot="code">
+                    {`
+                      <materials-list selectable multiple>
+                        <materials-list-item>Un</materials-list-item>
+                        <materials-list-item>Deux</materials-list-item>
+                        <materials-list-item>Trois</materials-list-item>
+                        <materials-list-item>Quatre</materials-list-item>
+                      </materials-list>
+                    `}
+                  </code>
+                </app-demo-code-block>
               </Host>
             );
           }
