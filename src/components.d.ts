@@ -9,6 +9,9 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
+  interface AppAlertControllerApi {}
+  interface AppAlertControllerDemo {}
+  interface AppAlertControllerTabs {}
   interface AppAutocompleteApi {}
   interface AppAutocompleteDemo {}
   interface AppAutocompleteTabs {}
@@ -44,6 +47,9 @@ export namespace Components {
   }
   interface AppDemoTemplatePage {}
   interface AppDialogApi {}
+  interface AppDialogControllerApi {}
+  interface AppDialogControllerDemo {}
+  interface AppDialogControllerTabs {}
   interface AppDialogDemo {}
   interface AppDialogTabs {}
   interface AppDrawerApi {}
@@ -143,6 +149,24 @@ export namespace Components {
 
 declare global {
 
+
+  interface HTMLAppAlertControllerApiElement extends Components.AppAlertControllerApi, HTMLStencilElement {}
+  var HTMLAppAlertControllerApiElement: {
+    prototype: HTMLAppAlertControllerApiElement;
+    new (): HTMLAppAlertControllerApiElement;
+  };
+
+  interface HTMLAppAlertControllerDemoElement extends Components.AppAlertControllerDemo, HTMLStencilElement {}
+  var HTMLAppAlertControllerDemoElement: {
+    prototype: HTMLAppAlertControllerDemoElement;
+    new (): HTMLAppAlertControllerDemoElement;
+  };
+
+  interface HTMLAppAlertControllerTabsElement extends Components.AppAlertControllerTabs, HTMLStencilElement {}
+  var HTMLAppAlertControllerTabsElement: {
+    prototype: HTMLAppAlertControllerTabsElement;
+    new (): HTMLAppAlertControllerTabsElement;
+  };
 
   interface HTMLAppAutocompleteApiElement extends Components.AppAutocompleteApi, HTMLStencilElement {}
   var HTMLAppAutocompleteApiElement: {
@@ -340,6 +364,24 @@ declare global {
   var HTMLAppDialogApiElement: {
     prototype: HTMLAppDialogApiElement;
     new (): HTMLAppDialogApiElement;
+  };
+
+  interface HTMLAppDialogControllerApiElement extends Components.AppDialogControllerApi, HTMLStencilElement {}
+  var HTMLAppDialogControllerApiElement: {
+    prototype: HTMLAppDialogControllerApiElement;
+    new (): HTMLAppDialogControllerApiElement;
+  };
+
+  interface HTMLAppDialogControllerDemoElement extends Components.AppDialogControllerDemo, HTMLStencilElement {}
+  var HTMLAppDialogControllerDemoElement: {
+    prototype: HTMLAppDialogControllerDemoElement;
+    new (): HTMLAppDialogControllerDemoElement;
+  };
+
+  interface HTMLAppDialogControllerTabsElement extends Components.AppDialogControllerTabs, HTMLStencilElement {}
+  var HTMLAppDialogControllerTabsElement: {
+    prototype: HTMLAppDialogControllerTabsElement;
+    new (): HTMLAppDialogControllerTabsElement;
   };
 
   interface HTMLAppDialogDemoElement extends Components.AppDialogDemo, HTMLStencilElement {}
@@ -912,6 +954,9 @@ declare global {
     new (): HTMLAppTopAppBarTabsElement;
   };
   interface HTMLElementTagNameMap {
+    'app-alert-controller-api': HTMLAppAlertControllerApiElement;
+    'app-alert-controller-demo': HTMLAppAlertControllerDemoElement;
+    'app-alert-controller-tabs': HTMLAppAlertControllerTabsElement;
     'app-autocomplete-api': HTMLAppAutocompleteApiElement;
     'app-autocomplete-demo': HTMLAppAutocompleteDemoElement;
     'app-autocomplete-tabs': HTMLAppAutocompleteTabsElement;
@@ -945,6 +990,9 @@ declare global {
     'app-demo-code-block': HTMLAppDemoCodeBlockElement;
     'app-demo-template-page': HTMLAppDemoTemplatePageElement;
     'app-dialog-api': HTMLAppDialogApiElement;
+    'app-dialog-controller-api': HTMLAppDialogControllerApiElement;
+    'app-dialog-controller-demo': HTMLAppDialogControllerDemoElement;
+    'app-dialog-controller-tabs': HTMLAppDialogControllerTabsElement;
     'app-dialog-demo': HTMLAppDialogDemoElement;
     'app-dialog-tabs': HTMLAppDialogTabsElement;
     'app-drawer-api': HTMLAppDrawerApiElement;
@@ -1044,6 +1092,9 @@ declare global {
 }
 
 declare namespace LocalJSX {
+  interface AppAlertControllerApi extends JSXBase.HTMLAttributes<HTMLAppAlertControllerApiElement> {}
+  interface AppAlertControllerDemo extends JSXBase.HTMLAttributes<HTMLAppAlertControllerDemoElement> {}
+  interface AppAlertControllerTabs extends JSXBase.HTMLAttributes<HTMLAppAlertControllerTabsElement> {}
   interface AppAutocompleteApi extends JSXBase.HTMLAttributes<HTMLAppAutocompleteApiElement> {}
   interface AppAutocompleteDemo extends JSXBase.HTMLAttributes<HTMLAppAutocompleteDemoElement> {}
   interface AppAutocompleteTabs extends JSXBase.HTMLAttributes<HTMLAppAutocompleteTabsElement> {}
@@ -1079,6 +1130,9 @@ declare namespace LocalJSX {
   }
   interface AppDemoTemplatePage extends JSXBase.HTMLAttributes<HTMLAppDemoTemplatePageElement> {}
   interface AppDialogApi extends JSXBase.HTMLAttributes<HTMLAppDialogApiElement> {}
+  interface AppDialogControllerApi extends JSXBase.HTMLAttributes<HTMLAppDialogControllerApiElement> {}
+  interface AppDialogControllerDemo extends JSXBase.HTMLAttributes<HTMLAppDialogControllerDemoElement> {}
+  interface AppDialogControllerTabs extends JSXBase.HTMLAttributes<HTMLAppDialogControllerTabsElement> {}
   interface AppDialogDemo extends JSXBase.HTMLAttributes<HTMLAppDialogDemoElement> {}
   interface AppDialogTabs extends JSXBase.HTMLAttributes<HTMLAppDialogTabsElement> {}
   interface AppDrawerApi extends JSXBase.HTMLAttributes<HTMLAppDrawerApiElement> {}
@@ -1176,6 +1230,9 @@ declare namespace LocalJSX {
   interface AppTopAppBarTabs extends JSXBase.HTMLAttributes<HTMLAppTopAppBarTabsElement> {}
 
   interface IntrinsicElements {
+    'app-alert-controller-api': AppAlertControllerApi;
+    'app-alert-controller-demo': AppAlertControllerDemo;
+    'app-alert-controller-tabs': AppAlertControllerTabs;
     'app-autocomplete-api': AppAutocompleteApi;
     'app-autocomplete-demo': AppAutocompleteDemo;
     'app-autocomplete-tabs': AppAutocompleteTabs;
@@ -1209,6 +1266,9 @@ declare namespace LocalJSX {
     'app-demo-code-block': AppDemoCodeBlock;
     'app-demo-template-page': AppDemoTemplatePage;
     'app-dialog-api': AppDialogApi;
+    'app-dialog-controller-api': AppDialogControllerApi;
+    'app-dialog-controller-demo': AppDialogControllerDemo;
+    'app-dialog-controller-tabs': AppDialogControllerTabs;
     'app-dialog-demo': AppDialogDemo;
     'app-dialog-tabs': AppDialogTabs;
     'app-drawer-api': AppDrawerApi;

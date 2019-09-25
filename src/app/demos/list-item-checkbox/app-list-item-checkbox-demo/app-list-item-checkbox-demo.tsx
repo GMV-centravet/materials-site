@@ -8,7 +8,7 @@ import { Component, h, Host } from '@stencil/core';
           render() {
             return (
               <Host>
-                TODO: Add list-item-checkbox demos
+                See list demo <a href="/components/list/demo">Here</a>
               </Host>
             );
           }

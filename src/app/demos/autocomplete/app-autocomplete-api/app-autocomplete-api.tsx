@@ -53,6 +53,20 @@ export class AutocompleteApi {
 <td><code>undefined</code></td>
 </tr>
 <tr>
+<td><code>maxSuggestions</code></td>
+<td><code>max-suggestions</code></td>
+<td>Limits the number of suggestions displayed in list</td>
+<td><code>number</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>trailingIcon</code></td>
+<td><code>trailing-icon</code></td>
+<td>Adds an icon at the end of the text field</td>
+<td><code>string</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
 <td><code>value</code></td>
 <td>–</td>
 <td>Value of the autocomplete text-field composed by a label to be displayed in the text-field and a value that is a real value if no label given, label = value</td>
@@ -74,7 +88,7 @@ export class AutocompleteApi {
 <tr>
 <td><code>change</code></td>
 <td>Change event emitted when value is selected</td>
-<td><code>CustomEvent&lt;any&gt;</code></td>
+<td><code>CustomEvent&lt;&#123; label?: string; value: string; &#125;&gt;</code></td>
 </tr>
 </tbody>
 </table>
@@ -82,13 +96,13 @@ export class AutocompleteApi {
 <h3>Depends on</h3>
 <ul>
 <li><a href="../text-field">materials-text-field</a></li>
-<li><a href="../menu">materials-menu</a></li>
+<li><a href="../list">materials-list</a></li>
 <li><a href="../list-item">materials-list-item</a></li>
 </ul>
 <h3>Graph</h3>
 <pre><code class="language-mermaid">graph TD;
   materials-autocomplete --&gt; materials-text-field
-  materials-autocomplete --&gt; materials-menu
+  materials-autocomplete --&gt; materials-list
   materials-autocomplete --&gt; materials-list-item
   style materials-autocomplete fill:#f9f,stroke:#333,stroke-width:4px
 </code></pre>

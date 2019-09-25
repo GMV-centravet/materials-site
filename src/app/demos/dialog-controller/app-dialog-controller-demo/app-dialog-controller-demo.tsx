@@ -1,14 +1,14 @@
 import { Component, h, Host } from '@stencil/core';
         @Component({
-          tag: 'app-list-item-demo',
-          styleUrl: 'app-list-item-demo.scss'
+          tag: 'app-dialog-controller-demo',
+          styleUrl: 'app-dialog-controller-demo.scss'
         })
-        export class AppListItemDemo {
+        export class AppDialogControllerDemo {
 
           render() {
             return (
               <Host>
-                See list demo <a href="/components/list/demo">Here</a>
+                TODO: Add dialog-controller demos
               </Host>
             );
           }

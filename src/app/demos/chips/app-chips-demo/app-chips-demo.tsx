@@ -13,9 +13,41 @@ export class AppChipsDemo {
             Chip
           </materials-chip>
           <code slot="code">
-            {`<materials-chip>
+          {`
+          <materials-chip>
             Chip
-          </materials-chip>`}
+          </materials-chip>
+          `}
+          </code>
+        </app-demo-code-block>
+        <app-demo-code-block blockTitle="Colored chip elements">
+          <materials-chip slot="demo" color="#f43006">
+            Chip hexa color
+          </materials-chip>
+          <materials-chip slot="demo" color="primary">
+            Chip primary
+          </materials-chip>
+          <materials-chip slot="demo" color="secondary">
+            Chip secondary
+          </materials-chip>
+          <materials-chip slot="demo" inkColor="#FFFFFF">
+            Chip text colored
+          </materials-chip>
+          <code slot="code">
+            {`
+            <materials-chip color="#f43006">
+              Chip hexa color
+            </materials-chip>
+            <materials-chip color="primary">
+              Chip primary
+            </materials-chip>
+            <materials-chip color="secondary">
+              Chip secondary
+            </materials-chip>
+            <materials-chip inkColor="#FFFFFF">
+              Chip text colored
+            </materials-chip>
+          `}
           </code>
         </app-demo-code-block>
       </Host>

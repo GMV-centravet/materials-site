@@ -32,7 +32,7 @@ export class AppAutocompleteDemo {
     return (
       <Host>
       <app-demo-code-block blockTitle="Autocomplete">
-      <materials-autocomplete slot="demo" autocomplete={autocompleteCb}></materials-autocomplete>
+      <materials-autocomplete slot="demo" autocomplete={autocompleteCb} maxSuggestions={5}></materials-autocomplete>
       <code slot="code">
       {
         `<script>
@@ -57,7 +57,7 @@ export class AppAutocompleteDemo {
         }
         document.querySelector('materials-autocomplete').autocomplete = autocompleteCb;
       </script>
-      <materials-autocomplete autocomplete={autocompleteCb}></materials-autocomplete>`
+      <materials-autocomplete autocomplete={autocompleteCb} maxSuggestions={5}></materials-autocomplete>`
       }
       </code>
       </app-demo-code-block>

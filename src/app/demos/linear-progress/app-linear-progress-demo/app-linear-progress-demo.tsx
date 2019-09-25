@@ -17,7 +17,7 @@ import { Component, h, Host } from '@stencil/core';
                 <app-demo-code-block blockTitle="Linear progress">
                   <div style={{width: '100%'}} slot="demo">
                     <materials-button onClick={() => this.toggleProgress() }>Toggle progress</materials-button>
-                    <materials-linear-progress backgroundColor="#ff9100" ref={el => this.progressElement = el as HTMLMaterialsLinearProgressElement}>
+                    <materials-linear-progress backgroundColor="#ff9100" indeterminate ref={el => this.progressElement = el}>
                     </materials-linear-progress>
                   </div>
                   <code slot="code">
